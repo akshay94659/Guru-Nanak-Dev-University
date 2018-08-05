@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script src="js/jquery.js "> </script>
+		<script>
+			$(document).ready(function(){
+				var col=$('.colo').val();
+				$('body').css('background',col);
+				
+				$('.colo').change(function(){
+					var col=$('.colo').val();
+					$('body').css('background',col);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<select class="colo">
+			<option value="red"> RED </option>
+			<option value="green"> GREEN </option>
+			<option value="blue"> BLUE </option>
+		</select>
+	</body>
+</html>
