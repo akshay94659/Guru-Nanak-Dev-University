@@ -11,13 +11,16 @@
 			  <script>
 				$(document).ready(function(){
 					$('.one').fadeIn(3000);
-					$('.slide').slideDown(5000);
+					$('.sd').slideDown(5000);
 			
 				
 				});
 		
 			  </script>
 			  <style>
+				  .sd
+				  {	display:none;
+				  }
 				.one{
 					display:none;
 				}
@@ -30,6 +33,17 @@
 					background-size:100%;
 					height:230px;
 					
+				}
+				.anim
+				{
+				  color:red;
+				  animation:ab 1s infinite alternate;
+				}
+				@keyframes ab
+				{
+					0%{ color:red}
+					50%{color:blue}
+					100%{color:greeen }
 				}
 			  </style>
 		</head>	  
@@ -51,27 +65,40 @@
 				   <div class="col-lg-4 col-md-3 col-sm-2 "></div>
 			    </div>
 <!-----------------------------------navbar------------------------------------------------------------------------------------>
-						    <div class="row one"  >
+				<div class="row one"  >
 				    <div class="col-lg-12 navbar navbar-inverse">
 					     <div class="container-fluid">
-							
-								<ul class="nav navbar-nav">
-									<li> <a href="index.html" > VISIT COLLEGE WEBSITE</a> </li>
-									<li ><a href="about_MSZ.html" > ABOUT-US </a>
-									</li>
-									<li> <a href="event.html" > SEARCH-BOOK </a> </li>
-									<li> <a href="M.html" > LIBRARY RULES </a> </li>
-									<li> <a href="li_rULES.html" > LIBRARY HOURS</a> </li>
-								</ul>
+							<ul class="nav navbar-nav">
+								<li> <a href="index.html" > VISIT COLLEGE WEBSITE</a> </li>
+								<li ><a href="about_MSZ.html" > ABOUT-US </a></li>
+								<li> <a href="search_book.html" > SEARCH-BOOK </a> </li>
+								<li> <a href="M.html" > LIBRARY RULES </a> </li>
+								<li> <a href="li_rULES.html" > LIBRARY HOURS</a> </li>
+							</ul>
 						</div>
 					</div>
 			    </div>
 <!-----------------------------------------main content------------------------------------------------------->
 				<div class="row">
-					<div class="col-lg-4"></div>
+					<div class="col-lg-4">
+						<div class="row">
+							<div class="col-lg-12" style="margin-top:1em" >
+								<button class="btn btn-info" > VIEW EVENTS </button></br>
+							</div>
+							<div class="col-lg-12" style="margin-top:1em">
+								<button class="btn btn-info" > VIEW PROSPECTUS </button></br>
+							</div>
+							<div class="col-lg-12 "style="margin-top:1em">
+								<button class="btn btn-info" > ADMISSION DETAIL</button></br>
+							</div>
+							<div class="col-lg-12"style="margin-top:1em">
+								<button class="btn btn-info" > FACILITIES AVAILABLE </button></br>
+							</div>
+						</div>
+					</div>
 					<div class="col-lg-4" style="margin : 40px 0px 0px 0px">
 						<div class="row" >
-							<div class="col-lg-12 im">
+							<div class="col-lg-12 im sd">
 								<div class="row">
 									<div class="col-lg-12" STYLE="HEIGHT:50PX;"></div>
 								</div>
@@ -101,15 +128,17 @@
 								</div>
 							</div>
 							<div class="col-lg-6"></div>
-							<div class="col-lg-6">
+							<div class="col-lg-6 ">
 								<img src="image//a4.png" style="height:80px;widht:20px" />
 							</div>
-							<div class="col-lg-12" style="font-size:25px;font -weight:20px;text-align:center">
+							<div class="col-lg-12 anim" style="font-size:25px;font -weight:20px;text-align:center">
 								CLICK HERE
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-1">
+					</div>
+					<div class="col-lg-3">
 							<marquee direction="up" >
 								<img src="image//3.jpg"/>
 							</marquee>
